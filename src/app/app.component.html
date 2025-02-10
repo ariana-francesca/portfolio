@@ -1,0 +1,21 @@
+<!-- <nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/about">About</a>
+  <a routerLink="/projects">Projects</a>
+  <a routerLink="/contact">Contact</a>
+  <button (click)="toggleTheme()">Toggle Theme</button>
+</nav> -->
+<router-outlet></router-outlet>
+<app-home></app-home>
+<app-about></app-about>
+<app-projects></app-projects>
+<app-contact></app-contact>
+
+<div class="position-fixed bottom-0 end-0 p-3">
+  <button (click)="toggleDarkMode()" class="btn btn-outline-primary">
+    Toggle Dark Mode
+  </button>
+</div>
+
+<router-outlet />
+
